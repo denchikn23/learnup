@@ -3,6 +3,10 @@ public class Main {
         int amount = 60;
         int discount = 100;
 
+        if (amount <=0) {
+            System.out.println("Сумма не может быть неположительной: " + amount);
+            return;
+        }
         if (discount >= amount) {
             discount = amount - 1;
         }
